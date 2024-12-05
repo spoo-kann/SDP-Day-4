@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="p8.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        
+        <div class="form-section">
+            <h2>Personal Details</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="studentId" placeholder="Student ID">
+            <button onclick="addPersonalDetails()">Add Personal Details</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Academic Details</h2>
+            <input type="text" id="semester" placeholder="Semester">
+            <input type="text" id="courses" placeholder="Courses (comma separated)">
+            <button onclick="addAcademicDetails()">Add Academic Details</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Administrative Details</h2>
+            <input type="text" id="adminType" placeholder="Detail Type">
+            <input type="text" id="adminValue" placeholder="Detail Value">
+            <button onclick="addAdministrativeDetails()">Add Administrative Details</button>
+        </div>
+
+        <button onclick="deleteProfile()">Delete Profile</button>
+        <button onclick="displayInfo()">Display Info</button>
+
+        <h2>Student Information</h2>
+        <pre id="studentInfo"></pre>
+    </div>
+
+    <script src="p8.js"></script>
+</body>
+</html>
